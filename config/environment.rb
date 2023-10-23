@@ -4,4 +4,7 @@ require_relative "application"
 # Initialize the Rails application.
 Rails.application.initialize!
 
-config.hosts << "sample-app-sqlite.onrender.com"
+Rails.application.configure do
+    config.hosts << "sample-app-sqlite.onrender.com"
+end
+
